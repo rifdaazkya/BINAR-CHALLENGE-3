@@ -1,0 +1,379 @@
+<!-- <section class="mb-4">
+  <div class="container">
+    <div class="row justify-content-between align-items-center meta">
+      <div class="col col-top-text">
+        <h4 class="meta__name">Dashboard </h4>
+      </div>
+      <div class="col-auto">
+        <span class="meta__customize-btn">Dasboard</span>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- body -->
+
+<body>
+  <div class="container">
+    <section id="page-5">
+      <div class="row">
+          <div class="col-12">
+              <div class="sub-tree d-flex mt-3 mb-3">
+                  <a href="#">
+                      <!-- <h5 class="meta__name">Cars > <a class="text-muted">List Car</a></h5>  -->
+                      <h5 class="fw-bold">Dashboard  </h5>
+                  </a>
+                  <i class="fa fa-solid fa-chevron-right mx-2"></i>
+                  <a href="#">
+                      <h5 class="fw-bold">Dashboard  </h5>
+                  </a>
+              </div>
+
+    <h2>Dashboard</h2>
+    <h4><img src="/images/fi.png">        List Order</h4>
+    <br>
+    <table class="table" id="">
+      <thead class="thead-dark">
+        <tr>
+          <script>
+            let order = [
+              "No",
+              "User Email",
+              "Car",
+              "Start Rent",
+              "Finish Rent",
+              "Price",
+              "Status",
+            ];
+            for (let rent in order) {
+              document.write(`
+                    <th>${order[rent]}</th>
+                  `);
+            }
+          </script>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="bottom">
+      <div class="row">
+        <p class="limit col-lg-1 col-md-2">Limit</p>
+        <p class="tjtp col-lg-2 col-md-2">Jump to page</p>
+      </div>
+      <div class="row">
+        <div class="drop col-lg-1 col-md-2 col-12">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>10</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="40">40</option>
+          </select>
+        </div>
+        <div class="jtp col-lg-4 col-md-4 col-12">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>1</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <button id="table" type="button" class="btn btn-primary">Go</button>
+        </div>
+        <div class="paging col-lg-7 col-md-6 col-12 justify-content-end">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">...</a></li>
+              <li class="page-item"><a class="page-link" href="#">9</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <!-- <h2>Dashboard</h2> -->
+    <h4><img src="/images/fi.png">        List Order</h4>
+    <table class="table" id="">
+      <thead class="thead-dark">
+        <tr>
+          <script>
+            let rental = [
+              "No",
+              "User Email",
+              "Car",
+              "Start Rent",
+              "Finish Rent",
+              "Price",
+              "Status",
+            ];
+            for (let rent in rental) {
+              document.write(`
+                    <th>${rental[rent]}</th>
+                  `);
+            }
+          </script>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>User Email</td>
+          <td>Car</td>
+          <td>Start Rent</td>
+          <td>Finish Rent</td>
+          <td>Price</td>
+          <td>Status</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="bottom">
+      <div class="row">
+        <p class="limit col-lg-1 col-md-2">Limit</p>
+        <p class="tjtp col-lg-2 col-md-2">Jump to page</p>
+      </div>
+      <div class="row">
+        <div class="drop col-lg-1 col-md-2 col-12">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>10</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="40">40</option>
+          </select>
+        </div>
+        <div class="jtp col-lg-4 col-md-4 col-12">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>1</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <button id="table" type="button" class="btn btn-primary">Go</button>
+        </div>
+        <div class="paging col-lg-7 col-md-6 col-12 justify-content-end">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">...</a></li>
+              <li class="page-item"><a class="page-link" href="#">9</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/javascript/main.js"></script>
+  <!-- Jquery -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="assets/bootstrap5/js/bootstrap.min.js"></script>
+  <script src="assets/bootstrap5/js/popper.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#myTable").DataTable({});
+    });
+  </script>
+</body>

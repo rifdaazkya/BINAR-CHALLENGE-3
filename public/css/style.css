@@ -1,0 +1,288 @@
+:root {
+    --custom-primary: #0D28A6;
+    --white: #ffffff;
+}
+
+#main-container {
+    min-height: 100vh;
+}
+
+/* SIDE MENU */
+
+#side-menu {
+    background: var(--custom-primary);
+    flex-basis: 50px;
+    padding: 10px;
+}
+
+.main-nav__item{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: var(--white);
+    /* display: block; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 12px;
+    line-height: 30px;
+    height: 40px;
+    position: relative;
+    font-size: 15px;
+}
+.main-nav__item a:hover {
+    color: white;
+    font-weight: bold;
+}
+/* .main-nav__item a:before {
+    content: "";
+    background: red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+}
+.main-nav__item a:hover:before {
+    width: 5px;
+} */
+
+/* End of SIDE MENU */
+
+/* HEADER */
+
+#main {
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: #F0EFF5;
+}
+
+#header {
+    background: white;
+    max-height: 70px;
+    min-height: 70px;
+}
+.search-icon {
+    font-size: 20px;
+    color: var(--custom-primary);
+}
+.search-input {
+    border: 0;
+    width: 100%;
+    outline: 0;
+}
+
+/* End of HEADER */
+
+/* MAIN CONTENT */
+
+#content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.meta__name {
+    color: var(--custom-primary);
+}
+.meta__customize-btn {
+    font-size: 10px;
+    font-style: italic;
+    color: var(--white);
+}
+
+
+/* End of MAIN CONTENT */
+
+/* Card styling */
+
+.card-container {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+}
+.card {
+    display: grid;
+}
+.card .button {
+    align-self: end;
+}
+
+.sidebar-icon i{
+    font-size: 24px;
+}
+
+.plus-icon{
+    font-size: 18px;
+}
+
+.mn-icon{
+    font-size: 40px;
+}
+
+
+/* Simple Card styles for prettying */
+
+/* html {
+    font-size: 16px;
+    font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+body {
+    background-color: #efefef;
+}
+* {
+    box-sizing: border-box;
+}
+.card {
+    box-shadow: 0px 1px 5px #555;
+    background-color: white;
+}
+.card__title {
+    font-size: 2rem;
+    padding: .5rem;
+}
+.card__description {
+    padding: .5rem;
+    line-height: 1.6em;
+}
+.button {
+    display: block;
+    background-color: tomato;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: .3s ease-out;
+    /* &:hover {
+        background-color: darken(tomato, 10%);
+    } */
+/* }
+img {
+    max-width: 100%;
+} */
+
+/* end of card styling */
+
+/* misc */
+.divider{
+    width:16px;
+    height:auto;
+    display:inline-block;
+}
+
+.car-cards .card{
+    max-width: 351px;
+    max-height: 482px;
+    height: 482px;
+    padding: 24px;
+}
+
+.car-cards .card .card-body{
+    padding: 0px;
+}
+.card-body-button {
+    width: 100%;
+}
+
+.car-cards {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.col-top-text {
+    padding: 1px;
+}
+
+/* modal */
+/* The Modal (background) */
+#myModal .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.068); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  #myModal .modal-content {
+    background-color: #73CA5C;
+    margin: 5% auto;
+    padding: 10px;
+    /* border: 0px solid #888; */
+    width: 80%;
+    inline-size: max-content;
+  }
+  
+  /* The Close Button */
+  #myModal .close {
+      display: none;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  #myModal .close:hover,
+ #myModal .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #table .btn {
+    display: inline;
+    background: #0D28A6;
+    color: #fff;
+    width: 43px;
+    height: 36px;
+}
+
+.table .thead-dark th {
+    color: rgb(0, 0, 0);
+    background-color: #CFD4ED;
+    border-color: #32383e;
+    border-top: #CFD4ED;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #0D28A6;
+    border-color: #007bff;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0D28A6;
+    border-color: #007bff;
+}
+
+.paging nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottom .row>* {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.bottom .jtp .form-select {
+    width: 76px;
+    height: 36px;
+    font-size: 12px;
+}
+.bottom .form-select {
+    display: inline;
+    width: 76px;
+    height: 36px;
+    font-size: 12px;
+}
+
